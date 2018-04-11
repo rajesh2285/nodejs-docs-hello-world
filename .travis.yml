@@ -1,0 +1,13 @@
+language: node.js
+
+#build_script:
+#- mvn install
+
+deploy:
+  provider: azure_web_apps
+  verbose: true
+  skip_cleanup: true
+  username: rajeshmukkapati       # If AZURE_WA_USERNAME isn't set
+  password: HelloWorld  # If AZURE_WA_PASSWORD isn't set
+  site: nodejs-hello-worlf       # If AZURE_WA_SITE isn't set
+  skip_cleanup: true
